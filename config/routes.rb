@@ -1,4 +1,7 @@
 EmailExercise::Application.routes.draw do
+
+  root to: "users#index"
+
   resources :admins
 
   resources :users
@@ -43,7 +46,7 @@ EmailExercise::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
